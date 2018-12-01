@@ -18,8 +18,7 @@ before_install:
   - docker build -t kylemartincollins/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run kylemartincollins/react-test npm test -- --coverage
-  
+  - docker run kylemartincollins/react-test npm test -- --coverage 
 
 deploy:
   provider: script
