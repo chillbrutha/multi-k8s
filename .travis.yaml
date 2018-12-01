@@ -19,6 +19,7 @@ before_install:
 
 script:
   - docker run kylemartincollins/react-test npm test -- --coverage
+  
 
 deploy:
   provider: script
